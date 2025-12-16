@@ -40,7 +40,47 @@ Any errors during loading the driver or connecting to the database are displayed
 # Expected Output Behavior
 If the database is reachable and the table has data → displays a connection success message.
 If the table has no data → displays a failure message.
-
 If the driver is missing → shows a driver error message.
-
 If login details or database are incorrect → shows a database error message
+
+
+
+# Task 2 
+
+# 1  Purpose of the Program
+This program is used to fetch student records from the database and display them on the console. It reads data from the Students_Info table and shows each student's details in a readable format.
+
+# 2. Database Connection
+The program first establishes a connection to the database using a separate database connection class.
+Once the connection is successful, the program is able to communicate with the database and execute SQL queries.
+
+# 3. SQL Query Execution
+A SQL query is sent to the database to retrieve all rows and columns from the Students_Info table.
+The database processes this query and sends the matching data back to the program.
+
+# 4. Receiving Data from the Database
+The returned data is stored in a result set.
+The result set behaves like a table where each row represents a single student record.
+
+# 5. Reading Data Row by Row
+The program reads the result set one record at a time.
+For each student, the following details are retrieved:
+Student ID
+Name
+Age
+Gender
+Email
+Mobile Number
+Class / Standard
+
+# 6. Displaying the Student Details
+After reading all details of a student, the program prints them on the console in a single line.
+This process continues until all student records are displayed.
+
+# 7. Error Handling
+If any error occurs (such as database connection failure, missing table, or incorrect column name), the program displays the error details.
+These error messages help in identifying and fixing issues quickly.
+
+# 8. Program Completion
+After all records are printed, the program completes its execution.
+The program only reads data from the database and does not modify or update any records, making it a read-only operation.
